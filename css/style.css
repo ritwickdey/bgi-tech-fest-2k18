@@ -171,3 +171,7 @@ section{
 .modalPopdown{
     animation: modal-popdown 0.2s ease-out forwards;
 }
+
+.blur {
+    filter : blur(10px);
+}

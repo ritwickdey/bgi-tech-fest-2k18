@@ -43,6 +43,7 @@ $('.event').click(function () {
         "display": "block"
     });
 
+    $('section').addClass('blur');
     $('.' + eventNo + '-event').removeClass('modalPopdown');
     $('.' + eventNo + '-event').addClass('modalPopup');
 });
@@ -60,6 +61,7 @@ $('.modal-close-btn').click(function () {
         });
     }, 200);
 
+    $('section').removeClass('blur');
     $('.' + eventNo + '-event').removeClass('modalPopup');
     $('.' + eventNo + '-event').addClass('modalPopdown');
 });
