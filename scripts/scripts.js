@@ -43,13 +43,15 @@ $('.event').click(function () {
         "display": "block"
     });
 
+    $('.' + eventNo + '-event').removeClass('modalPopdown');
     $('.' + eventNo + '-event').addClass('modalPopup');
 });
 
 $('.modal-close-btn').click(function () {
     let eventNo = $(this).attr('eventNo');
-
+    let s1 = $('.overlay');
     setTimeout(() => {
+        let s = $('.overlay');
         $('.overlay').css({
             "display": "none"
         });
