@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Vollkorn SC', serif;
+}
+
+body{
+    height: 10000px;
+}
+
+.landing{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+.logo{
+    color: white;
+    position: absolute;
+    /* padding: 10px 20px; */
+    /* display: inline-block; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 5px solid white; */
+    text-align: right;
+}
+
+.logo h1 {
+    font-size: 75px;
+}
+.logo h3 {
+    margin-top: -35px
+}
+.link{
+    height: 10vh;
+    width: 10vw;
+    display: inline-block;
+}
+#events-section{
+    margin-top: 30px;
+    text-align: center;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    margin: 5% 20%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
