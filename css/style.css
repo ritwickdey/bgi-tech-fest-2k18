@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 10000px; 
+    /* height: 10000px;  */
     z-index: 1;
     background-color: #fafafa;
 }
@@ -88,7 +88,15 @@ section{
 #landing-section{
     margin: 0;
 }
+#events-section, #about-section, #contact-section{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+#about-section {
+    margin-top: 150px;
+}
 .events{
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +156,11 @@ section{
         margin-right: 5%;
     }
 
+}
+
+.map 
+{
+    
 }
 
 @keyframes modal-popup {
