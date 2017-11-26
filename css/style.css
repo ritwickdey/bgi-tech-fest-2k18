@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 10000px; 
+    /* height: 10000px;  */
     z-index: 1;
     background-color: #fafafa;
 }
@@ -43,6 +43,7 @@ html{
 
 section{
     margin-bottom: 5%;
+    /* min-height: 100vh; */
 }
 
 .landing{
@@ -82,12 +83,15 @@ section{
     width: 10vw;
     display: inline-block;
 }
-#events-section{
+#events-section, #about-section, #contact-section{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
 
+#about-section {
+    margin-top: 150px;
+}
 .events{
     display: flex;
     flex-wrap: wrap;
@@ -147,6 +151,11 @@ section{
         margin-right: 5%;
     }
 
+}
+
+.map 
+{
+    
 }
 
 @keyframes modal-popup {
