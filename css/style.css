@@ -55,19 +55,19 @@ section{
 }
 #events-section{
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .events{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 
 .event{
-    height: 25vw;
-    width: 25vw;
+    height: 20vw;
+    width: 32%;
     margin: 10px auto;
     background-color: blueviolet;
 }
