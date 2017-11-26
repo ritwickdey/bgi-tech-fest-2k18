@@ -143,8 +143,11 @@ section:nth-child(even) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
-
+.contact-area{
+    margin: auto 5vmin;
+}
 .contact-area:nth-child(2) {
     padding-bottom: 5vh;
 }
