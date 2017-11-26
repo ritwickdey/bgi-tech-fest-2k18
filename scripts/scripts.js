@@ -3,10 +3,18 @@ $(window).scroll((e) => {
 
     let landingSectionHeight = $('.landing').height();
     let wScroll = $(e.target).scrollTop();
-    if (wScroll <= landingSectionHeight) {
+
+    if (wScroll == 0) {
+        console.log("wScroll", wScroll);
+        console.log("l", landingSectionHeight);
+        $('.logo').css({
+            'transform': 'translate(-50%,-50%)'
+        });
+    }
+    else if (wScroll <= landingSectionHeight) {
 
         $('.logo').css({
-            'transform': 'translate(-50%, ' + wScroll / 3 + '%)'
+            'transform': 'translate(-50%, ' + wScroll / 6 + '%)'
         });
 
         $('.go-down').css({
@@ -20,5 +28,5 @@ $(window).scroll((e) => {
 $('.go-down').click((e) => {
     $('html, body').animate({
         scrollTop: $('#events-section').offset().top
-    });
+    }, 1000);
 });
