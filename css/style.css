@@ -50,7 +50,14 @@ html{
 section{
     /* background-color: pink; */
     width: 100vw;
-    padding-top: 5vw;
+    padding: 5vw 0;
+}
+
+section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+section:nth-child(even) {
+    background-color: #fefefe;
 }
 
 .landing{
