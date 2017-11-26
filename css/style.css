@@ -140,6 +140,19 @@ section{
     }
 }
 
+@keyframes modal-popdown {
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(0)
+    }
+}
+
 .modalPopup{
     animation: modal-popup 0.2s ease-in forwards;
+}
+
+.modalPopdown{
+    animation: modal-popdown 0.2s ease-out forwards;
 }

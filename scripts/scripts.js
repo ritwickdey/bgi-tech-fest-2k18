@@ -48,12 +48,16 @@ $('.event').click(function () {
 
 $('.modal-close-btn').click(function () {
     let eventNo = $(this).attr('eventNo');
-    $('.overlay').css({
-        "display": "none"
-    });
-    $('.' + eventNo + '-event').css({
-        "display": "none"
-    });
+
+    setTimeout(() => {
+        $('.overlay').css({
+            "display": "none"
+        });
+        $('.' + eventNo + '-event').css({
+            "display": "none"
+        });
+    }, 200);
 
     $('.' + eventNo + '-event').removeClass('modalPopup');
+    $('.' + eventNo + '-event').addClass('modalPopdown');
 });
