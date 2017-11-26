@@ -136,11 +136,10 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 }
 
-.contact-area:nth-child(1) {
-    width: 45%;
+.contact-area:nth-child(2) {
+    padding-bottom: 5vh;
 }
 
 @media(max-width:850px)
@@ -180,11 +179,7 @@ section{
         margin: 10px auto;
         background-color: blueviolet;
     }
-    #events-section{
-        text-align: center;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+    
     .contact-area {
         width: 100%;
     }
