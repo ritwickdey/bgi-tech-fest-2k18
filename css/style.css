@@ -81,19 +81,19 @@ section{
 }
 #events-section{
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .events{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 
 .event{
-    height: 25vw;
-    width: 25vw;
+    height: 20vw;
+    width: 32%;
     margin: 10px auto;
     background-color: blueviolet;
 }
@@ -106,6 +106,21 @@ section{
     transform: translate(-50%,0%);
 }
 
+@media(max-width:850px)
+{
+    .event{
+        width: 45%;
+        height: 30vw;
+    }
+}
+
+@media(max-width:550px)
+{
+    .event{
+        width: 100%;
+        height: 75vw;
+    }
+}
 
 @media(max-width:414px){
     .logo h1 {
@@ -118,7 +133,7 @@ section{
         flex-wrap: wrap;
     }
     .event{
-        width: 75vw;
+        width: 100%;
         height: 75vw;
         margin: 10px auto;
         background-color: blueviolet;
@@ -140,6 +155,19 @@ section{
     }
 }
 
+@keyframes modal-popdown {
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(0)
+    }
+}
+
 .modalPopup{
     animation: modal-popup 0.2s ease-in forwards;
+}
+
+.modalPopdown{
+    animation: modal-popdown 0.2s ease-out forwards;
 }
