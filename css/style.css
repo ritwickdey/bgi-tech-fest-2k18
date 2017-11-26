@@ -102,15 +102,7 @@ section:nth-child(even) {
     margin: 0;
     padding: 0;
 }
-/* #events-section, #about-section, #contact-section{
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
-#about-section {
-    margin-top: 150px;
-} */
 .events{
     display: flex;
     flex-wrap: wrap;
@@ -227,4 +219,17 @@ section:nth-child(even) {
 
 .blur {
     filter : blur(10px);
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.name {
+    color: #F20056;
+    text-decoration: none;
+}
+.name:hover {
+    color: #0099CC;
 }
