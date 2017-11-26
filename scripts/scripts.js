@@ -4,6 +4,11 @@ $(window).scroll((e) => {
     let landingSectionHeight = $('.landing').height();
     let wScroll = $(e.target).scrollTop();
 
+    $('.overlay').css({
+        "top": wScroll + 'px'
+    });
+
+
     if (wScroll == 0) {
         $('.logo').css({
             'transform': 'translate(-50%,-50%)'
@@ -27,4 +32,28 @@ $('.go-down').click((e) => {
     $('html, body').animate({
         scrollTop: $('#events-section').offset().top
     }, 1000);
+});
+
+$('.event').click(function () {
+    let eventNo = $(this).attr('eventNo');
+    $('.overlay').css({
+        "display": "block"
+    });
+    $('.' + eventNo + '-event').css({
+        "display": "block"
+    });
+
+    $('.' + eventNo + '-event').addClass('modalPopup');
+});
+
+$('.modal-close-btn').click(function () {
+    let eventNo = $(this).attr('eventNo');
+    $('.overlay').css({
+        "display": "none"
+    });
+    $('.' + eventNo + '-event').css({
+        "display": "none"
+    });
+
+    $('.' + eventNo + '-event').removeClass('modalPopup');
 });

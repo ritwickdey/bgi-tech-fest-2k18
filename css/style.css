@@ -7,9 +7,35 @@
 
 body{
     height: 10000px; 
+    z-index: 1;
 }
 html{
     overflow-x: hidden;
+}
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    position: absolute;
+    display: none;
+}
+.overlay > .event-details{
+    height: 70vh;
+    width: 85vw;
+    background: white;
+    display: none;
+    margin: 15vh auto;
+    transform-origin: center;
+    transform: translate(-50%,-50%)
+    
+}
+.details{
+    padding: 5vmin;
+}
+.modal-close-btn{
+    padding: 10px;
+    float: right
 }
 
 section{
@@ -105,3 +131,15 @@ section{
 
 }
 
+@keyframes modal-popup {
+    from{
+        transform: scale(0)
+    }
+    to{
+        transform: scale(1)
+    }
+}
+
+.modalPopup{
+    animation: modal-popup 0.2s ease-in forwards;
+}
