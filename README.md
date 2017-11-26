@@ -2,4 +2,4 @@
 
 _[We've just started working on it.]_
 
-> This repo is maintaining by [@prithweedas](https://github.com/prithweedas) & [@ritwickdey](https://github.com/ritwickdey)
+> This repo is being maintained by [@prithweedas](https://github.com/prithweedas) & [@ritwickdey](https://github.com/ritwickdey)

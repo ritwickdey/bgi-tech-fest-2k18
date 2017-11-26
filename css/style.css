@@ -31,6 +31,7 @@ html{
     transform: translate(-50%,-50%);
     overflow-x:hidden;
     overflow-y: auto;
+    z-index: 4;
 }
 .details{
     padding: 5vmin;
@@ -42,7 +43,8 @@ html{
 }
 
 section{
-    margin-bottom: 5%;
+    text-align: center;
+    margin: 2.5% 5%;
 }
 
 .landing{
@@ -82,10 +84,9 @@ section{
     width: 10vw;
     display: inline-block;
 }
-#events-section{
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+
+#landing-section{
+    margin: 0;
 }
 
 .events{

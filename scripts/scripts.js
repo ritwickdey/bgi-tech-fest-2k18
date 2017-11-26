@@ -49,10 +49,11 @@ $('document').ready(() => {
         $('.' + eventNo + '-event').addClass('modalPopup');
     });
 
-    $('.modal-close-btn').click(function () {
+    let closeModalAction = function () {
         let eventNo = $(this).attr('eventNo');
         let s1 = $('.overlay');
         setTimeout(() => {
+            $('section').removeClass('blur');
             let s = $('.overlay');
             $('.overlay').css({
                 "display": "none"
@@ -60,10 +61,15 @@ $('document').ready(() => {
             $('.' + eventNo + '-event').css({
                 "display": "none"
             });
-        }, 200);
+        }, 300);
 
-        $('section').removeClass('blur');
         $('.' + eventNo + '-event').removeClass('modalPopup');
         $('.' + eventNo + '-event').addClass('modalPopdown');
-    });
+
+    }
+
+    $('.modal-close-btn').click(closeModalAction);
+    $('.overlay').click(closeModalAction);
+    $('.event-details').click((e) => e.stopPropagation());
+
 });
