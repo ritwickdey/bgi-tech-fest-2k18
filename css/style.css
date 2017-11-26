@@ -21,11 +21,11 @@ html{
     display: none;
 }
 .overlay > .event-details{
-    height: 70vh;
-    width: 85vw;
+    height: 80vh;
+    width: 90vw;
     background: white;
     display: none;
-    margin: 15vh auto;
+    margin: 10vh auto;
     transform-origin: center;
     transform: translate(-50%,-50%)
     
