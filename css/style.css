@@ -42,7 +42,8 @@ html{
 }
 
 section{
-    margin-bottom: 5%;
+    text-align: center;
+    margin: 2.5% 5%;
 }
 
 .landing{
@@ -83,11 +84,6 @@ section{
     display: inline-block;
 }
 
-section{
-    text-align: center;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
 #landing-section{
     margin: 0;
 }
