@@ -13,6 +13,7 @@ body{
 html{
     overflow-x: hidden;
 }
+
 .overlay{
     height: 100vh;
     width: 100vw;
@@ -42,9 +43,14 @@ html{
     float: right
 }
 
-section{
+.container{
     text-align: center;
-    margin: 2.5% 5%;
+    margin:  0 auto;
+}
+section{
+    /* background-color: pink; */
+    width: 100vw;
+    padding-top: 5vw;
 }
 
 .landing{
@@ -87,8 +93,9 @@ section{
 
 #landing-section{
     margin: 0;
+    padding: 0;
 }
-#events-section, #about-section, #contact-section{
+/* #events-section, #about-section, #contact-section{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -96,7 +103,7 @@ section{
 
 #about-section {
     margin-top: 150px;
-}
+} */
 .events{
     display: flex;
     flex-wrap: wrap;
