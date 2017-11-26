@@ -5,8 +5,6 @@ $(window).scroll((e) => {
     let wScroll = $(e.target).scrollTop();
 
     if (wScroll == 0) {
-        console.log("wScroll", wScroll);
-        console.log("l", landingSectionHeight);
         $('.logo').css({
             'transform': 'translate(-50%,-50%)'
         });
