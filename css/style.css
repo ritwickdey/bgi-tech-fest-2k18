@@ -8,6 +8,7 @@
 body{
     height: 10000px; 
     z-index: 1;
+    background-color: #fafafa;
 }
 html{
     overflow-x: hidden;
@@ -29,7 +30,7 @@ html{
     transform-origin: center;
     transform: translate(-50%,-50%);
     overflow: scroll;
-    
+    z-index: 4;
 }
 .details{
     padding: 5vmin;
@@ -81,10 +82,14 @@ section{
     width: 10vw;
     display: inline-block;
 }
-#events-section{
+
+section{
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+#landing-section{
+    margin: 0;
 }
 
 .events{
