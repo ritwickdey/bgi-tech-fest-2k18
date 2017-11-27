@@ -31,11 +31,8 @@ html{
     transform-origin: center;
     transform: translate(-50%,-50%);
     overflow-x:hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     z-index: 4;
-}
-.details{
-    padding: 5vmin;
 }
 
 .modal-close-btn{
@@ -60,7 +57,7 @@ section:nth-child(even) {
     background-color: #fefefe;
 }
 
-.landing{
+/* .landing{
     height: 100vh;
     width: 100vw;
     background-image: url(../img/landing.jpg);
@@ -69,10 +66,28 @@ section:nth-child(even) {
     text-align: center;
     overflow: hidden;
     position: relative;
+} */
+.landing{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://c2.staticflickr.com/6/5496/29392487963_de266ba9a5_b.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+    background-position: 66%;
+    position: relative;
 }
 
+.darkness {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+}
 
 .logo{
+    z-index: 2;
     color: white;
     position: absolute;
     left: 50%;
@@ -230,4 +245,39 @@ footer {
 }
 .name:hover {
     color: #0099CC;
+}
+
+.event-details > i {
+    position: fixed;
+    top: -10px;
+    left: 87%;
+    margin-top: 10px;
+    z-index: 15
+}
+
+.details{
+    position: absolute;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+.details > h1 {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 0px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.details > p {
+    padding: 5px 20px;
+    position: absolute;
+    margin-top: 80px;
+    display: block;
 }
