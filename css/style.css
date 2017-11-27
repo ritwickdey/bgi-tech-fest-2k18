@@ -57,7 +57,7 @@ section:nth-child(even) {
     background-color: #fefefe;
 }
 
-.landing{
+/* .landing{
     height: 100vh;
     width: 100vw;
     background-image: url(../img/landing.jpg);
@@ -66,10 +66,28 @@ section:nth-child(even) {
     text-align: center;
     overflow: hidden;
     position: relative;
+} */
+.landing{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://c2.staticflickr.com/6/5496/29392487963_de266ba9a5_b.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+    background-position: 66%;
+    position: relative;
 }
 
+.darkness {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.45);
+}
 
 .logo{
+    z-index: 2;
     color: white;
     position: absolute;
     left: 50%;
