@@ -9,11 +9,18 @@
     <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
     <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
     <script src="https://use.fontawesome.com/7c0b3ec4f2.js"></script>
     <script src="scripts/scripts.js"></script>
+    <style>
+        .wow {
+            visibility: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -169,39 +176,39 @@
         </div>
     </section>
 
-    <section id="events-section">
+    <section class="wow slideInLeft" id="events-section">
         <div class="container">
             <div>
                 <h2>EVENTS</h2>
                 <h4>Some exciting events that are taking place</h4>
                 <hr>
                 <div class="events">
-                    <div eventNo="1" class="event">1st</div>
-                    <div eventNo="2" class="event">2nd</div>
-                    <div eventNo="3" class="event">3rd</div>
-                    <div eventNo="4" class="event">4th</div>
-                    <div eventNo="5" class="event">5th</div>
-                    <div eventNo="6" class="event">6th</div>
+                    <div eventNo="1" class="event wow zoomIn">1st</div>
+                    <div eventNo="2" class="event wow jackInTheBox">2nd</div>
+                    <div eventNo="3" class="event Right">3rd</div>
+                    <div eventNo="4" class="event wow jackInTheBox">4th</div>
+                    <div eventNo="5" class="event wow rollIn">5th</div>
+                    <div eventNo="6" class="event wow zoomIn">6th</div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about-section">
+    <section class="wow slideInRight" id="about-section">
         <div class="container">
             <h1>About section &#x1F62C;</h1>
             <hr> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eveniet autem, id a, fugit sunt optio aliquam
             voluptas, explicabo enim consequuntur hic amet voluptates provident necessitatibus dolorem quam impedit. Quo?
         </div>
     </section>
-    <section id="team-section">
+    <section class="wow slideInLeft" id="team-section">
         <div class="container">
             <h1>Team section&#x1F62C;</h1>
-            <hr> Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aliquam atque cum vero! In expedita adipisci dicta
+            <hr class=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aliquam atque cum vero! In expedita adipisci dicta
             maxime beatae? Delectus quam itaque nesciunt assumenda officia veniam, vel aliquam optio aspernatur!
         </div>
     </section>
 
-    <section id="contact-section">
+    <section class="wow slideInRight" id="contact-section">
         <div class="container">
             <div>
                 <h2>CONTACT US</h2>
@@ -227,7 +234,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="contact-area">
+                    <div class="contact-area  ">
                         <h5>
                             OUR LOCATION
                             <i class="fa fa-map-marker"></i>
@@ -244,7 +251,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="wow slideInLeft">
         <div class="container">
             <div style="float:left">
                 Copyright © 2017-18
@@ -258,6 +265,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 50,          // distance to the element when triggering the animation (default is 0)
+                mobile: true,       // trigger animations on mobile devices (default is true)
+                live: true,       // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null // optional scroll container selector, otherwise use window
+            }
+        );
+        wow.init();
+    </script>
 
 </body>
 
