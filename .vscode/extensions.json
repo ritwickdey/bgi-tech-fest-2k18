@@ -1,0 +1,7 @@
+{
+    /* add more useful extension */
+    "recommendations": [
+        "ritwickdey.LiveServer",
+        "ecmel.vscode-html-css"
+    ]
+}
