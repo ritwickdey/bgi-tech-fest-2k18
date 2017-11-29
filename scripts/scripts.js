@@ -5,11 +5,6 @@ $('document').ready(() => {
         let landingSectionHeight = $('.landing').height();
         let wScroll = $(e.target).scrollTop();
 
-        $('.overlay').css({
-            "top": wScroll + 'px'
-        });
-
-
         if (wScroll == 0) {
             $('.logo').css({
                 'transform': 'translate(-50%,-50%)'
@@ -40,6 +35,11 @@ $('document').ready(() => {
     $('.event').click(function () {
         let eventNo = $(this).attr('eventNo');
         openedPopUpEventId = eventNo;
+
+        $('.overlay').css({
+            "top":  $(window).scrollTop() + 'px'
+        });
+
         $('.overlay').css({
             "display": "block"
         });
