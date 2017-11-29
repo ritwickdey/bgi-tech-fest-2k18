@@ -69,9 +69,17 @@ section:nth-child(even) {
     overflow: hidden;
     position: relative;
 } */
-.landing{
+
+#landing-section{
+    margin: 0;
+    padding: 0;
     height: 100vh;
     width: 100vw;
+}
+
+.landing {
+    height: 100%;
+    width: 100%;
     background-image: url(https://c2.staticflickr.com/6/5496/29392487963_de266ba9a5_b.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -82,10 +90,12 @@ section:nth-child(even) {
 }
 
 .darkness {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
 }
 
 .logo{
@@ -115,10 +125,6 @@ section:nth-child(even) {
     display: inline-block;
 }
 
-#landing-section{
-    margin: 0;
-    padding: 0;
-}
 
 .events{
     display: flex;
@@ -286,4 +292,8 @@ footer {
     position: absolute;
     margin-top: 80px;
     display: block;
+}
+
+.fa, .event {
+    cursor: pointer;
 }
