@@ -30,8 +30,11 @@ $('document').ready(() => {
         }, 1000);
     });
 
+    let openedPopUpEventId =  null;
+
     $('.event').click(function () {
         let eventNo = $(this).attr('eventNo');
+        openedPopUpEventId = eventNo;
 
         $('.overlay').css({
             "top":  $(window).scrollTop() + 'px'
@@ -50,7 +53,7 @@ $('document').ready(() => {
     });
 
     let closeModalAction = function () {
-        let eventNo = $(this).attr('eventNo');
+        let eventNo = $(this).attr('eventNo') || openedPopUpEventId;
         let s1 = $('.overlay');
         setTimeout(() => {
             $('section').removeClass('blur');
