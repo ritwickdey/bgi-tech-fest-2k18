@@ -48,6 +48,7 @@ $('document').ready(() => {
         });
 
         $('section').addClass('blur');
+        $('html').addClass('disabled-scrolling');
         $('.' + eventNo + '-event').removeClass('modalPopdown');
         $('.' + eventNo + '-event').addClass('modalPopup');
     });
@@ -68,6 +69,7 @@ $('document').ready(() => {
 
         $('.' + eventNo + '-event').removeClass('modalPopup');
         $('.' + eventNo + '-event').addClass('modalPopdown');
+        $('html').removeClass('disabled-scrolling');
 
     }
 

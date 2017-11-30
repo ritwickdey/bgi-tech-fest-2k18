@@ -297,3 +297,7 @@ footer {
 .fa, .event {
     cursor: pointer;
 }
+
+.disabled-scrolling {
+    overflow: hidden !important;
+}
