@@ -70,11 +70,12 @@ $('document').ready(() => {
         $('.' + eventNo + '-event').removeClass('modalPopup');
         $('.' + eventNo + '-event').addClass('modalPopdown');
         $('html').removeClass('disabled-scrolling');
-
+        openedPopUpEventId = null;
     }
 
     $('.modal-close-btn').click(closeModalAction);
     $('.overlay').click(closeModalAction);
     $('.event-details').click((e) => e.stopPropagation());
+    $(document).keyup(e => e.keyCode == 27 && openedPopUpEventId && closeModalAction());
 
 });
