@@ -289,12 +289,12 @@ footer {
 
 .details > p {
     width: 100%;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     position: absolute;
     margin-top: 80px;
     display: block;
     text-align: center;
-    font-size: 28px; /*Temp*/
+    font-size: 26px; /*Temp*/
 }
 
 
