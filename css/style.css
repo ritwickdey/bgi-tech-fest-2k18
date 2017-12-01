@@ -133,7 +133,7 @@ section:nth-child(even) {
 }
 
 .event{
-    height: 20vw;
+    height: 14vw;
     width: 32%;
     margin: 10px auto;
     background-color: blueviolet;
@@ -288,11 +288,15 @@ footer {
 }
 
 .details > p {
+    width: 100%;
     padding: 5px 20px;
     position: absolute;
     margin-top: 80px;
     display: block;
+    text-align: center;
+    font-size: 28px; /*Temp*/
 }
+
 
 .fa, .event {
     cursor: pointer;
@@ -300,4 +304,17 @@ footer {
 
 .disabled-scrolling {
     overflow: hidden !important;
+}
+
+.event img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 4px 10px #0000005c;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+.event img:hover {
+   transform: scale(1.1);
+   transition: 0.2s
 }
