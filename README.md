@@ -2,7 +2,7 @@
 
 _[We've just started working on it.]_
 
-_[ We're tring build site for all screen size without using any heavy CSS library such as Bootstrap or Meterial CSS]_
+_[ We're tring build site for all screen size without using any heavy CSS library such as Bootstrap or Material CSS]_
 
 
 
