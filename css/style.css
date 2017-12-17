@@ -474,6 +474,25 @@ footer {
   color: #777;
 }
 
+.socialBtn {
+  font-size: 20px;
+  color: #fff;
+  background-color: #f20056;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+  transition: all 0.4s ease-in-out;
+}
+.socialBtn:focus,
+.socialBtn:hover {
+  color: #fff;
+  background-color: #3498db;
+  transform: scale(1.2);
+}
+
 
 /*Media Query should at button*/
 
