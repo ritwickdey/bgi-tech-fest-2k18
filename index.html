@@ -10,7 +10,8 @@
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/skeleton.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1"> <!-- ?v=1 ==>> To remove browser cache -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <!-- ?v=1 ==>> To remove browser cache -->
     <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/wow.min.js"></script>
@@ -100,22 +101,52 @@
                 <hr>
                 <div class="events">
                     <div eventNo="1" class="event wow zoomIn">
-                        <img src="./img/events/techno-buzz.jpg" alt="">
+                        <div class="card">
+                            <img src="./img/events/techno-buzz.jpg" alt="techno-buzz">
+                            <div>
+                                <p>techno-buzz</p>
+                            </div>
+                        </div>
                     </div>
                     <div eventNo="2" class="event wow jackInTheBox">
-                        <img src="./img/events/build-mach-arena.jpg" alt="">
+                        <div class="card">
+                            <img src="./img/events/build-mach-arena.jpg" alt="build-mach-arena">
+                            <div>
+                                <p>build-mach-arena</p>
+                            </div>
+                        </div>
                     </div>
                     <div eventNo="3" class="event Right">
-                        <img src="./img/events/code-storm.jpg" alt="">
+                        <div class="card">
+                            <img src="./img/events/code-storm.jpg" alt="code-storm">
+                            <div>
+                                <p>code-storm</p>
+                            </div>
+                        </div>
                     </div>
                     <div eventNo="4" class="event wow jackInTheBox">
-                        <img src="./img/events/photography.jpg" alt="">
+                        <div class="card">
+                            <img src="./img/events/photography.jpg" alt="photography">
+                            <div>
+                                <p>photography</p>
+                            </div>
+                        </div>
                     </div>
                     <div eventNo="5" class="event wow rollIn">
-                        <img src="./img/events/cs-go.jpg" alt="">
+                        <div class="card">
+                            <img src="./img/events/cs-go.jpg" alt="cs-go">
+                            <div>
+                                <p>cs-go</p>
+                            </div>
+                        </div>
                     </div>
                     <div eventNo="6" class="event wow zoomIn">
-                        <img src="./img/events/fifa-15.jpeg" alt="">
+                        <div class="card">
+                            <img src="./img/events/fifa-15.jpeg" alt="fifa-15">
+                            <div>
+                                <p>fifa-15</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,20 +226,18 @@
     </footer>
 
     <script>
-        var wow = new WOW(
-            {
-                boxClass: 'wow',      // animated element css class (default is wow)
-                animateClass: 'animated', // animation css class (default is animated)
-                offset: 50,          // distance to the element when triggering the animation (default is 0)
-                mobile: true,       // trigger animations on mobile devices (default is true)
-                live: true,       // act on asynchronously loaded content (default is true)
-                callback: function (box) {
-                    // the callback is fired every time an animation is started
-                    // the argument that is passed in is the DOM node being animated
-                },
-                scrollContainer: null // optional scroll container selector, otherwise use window
-            }
-        );
+        var wow = new WOW({
+            boxClass: 'wow', // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 50, // distance to the element when triggering the animation (default is 0)
+            mobile: true, // trigger animations on mobile devices (default is true)
+            live: true, // act on asynchronously loaded content (default is true)
+            callback: function (box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        });
         wow.init();
     </script>
 
