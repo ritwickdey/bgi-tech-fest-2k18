@@ -234,10 +234,10 @@ footer {
 
 .event-details>i {
   position: fixed;
-  top: -10px;
-  left: 87%;
-  margin-top: 10px;
   z-index: 15;
+  right: 4%;
+  top: 0;
+  transform: translate(0%, 10%);
 }
 
 .details {
@@ -253,13 +253,14 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 7px 0px;
+  padding: 15px 0px;
   text-align: center;
   background: #ffffff;
   border-bottom: 2px solid #eaeaea;
   font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .team-member {
@@ -475,6 +476,7 @@ footer {
 
 
 /*Media Query should at button*/
+
 @media (max-width: 850px) {
   .event {
     width: 45%;
@@ -511,11 +513,16 @@ footer {
     width: 100%;
   }
   .details>h1 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     letter-spacing: 1px;
   }
   .event-details>i {
-    top: -20px;
+    right: 0%;
+    left: auto;
+    font-size: 3.5rem;
+  }
+  .form-group {
+    width: 100%;
   }
 }
 
