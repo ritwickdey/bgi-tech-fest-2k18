@@ -329,3 +329,19 @@ footer {
     height: 80%;
     width: 100%;
 }
+
+.event .card .headText {
+    display: block;
+    height: 20%;
+    position: relative;
+}
+.event .card .headText p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
