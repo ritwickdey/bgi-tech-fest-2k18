@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   /* font-family: 'Lato', sans-serif; */
-  font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
   z-index: 1;
   background-color: #fafafa;
   font-size: 14px;
+  font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -122,8 +122,10 @@ section:nth-child(even) {
 .logo h1 {
   font-size: 75px;
   font-size: 75px;
-  letter-spacing: 5px;
   margin-bottom: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo h3 {
@@ -483,4 +485,16 @@ footer {
   font-size: 25px;
   letter-spacing: 0.5px;
   word-spacing: 0.5px;
+}
+
+.headline-section {
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.subline-section {
+  font-size: 2.2rem;
+  letter-spacing: 0.3px;
+  color: #777;
 }
