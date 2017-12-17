@@ -286,6 +286,46 @@ footer {
   border-bottom: 2px solid #eaeaea;
 }
 
+
+.team-member {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.team-member h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.team-members {
+  margin-top: 15px;
+}
+.team-members h4 {
+  margin: 0;
+}
+
+.team-member a {
+  text-decoration: none;
+  color: black;
+}
+.team-member a:hover {
+  color: #0099cc;
+}
+.team-members h5,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+.team-members p {
+  color: #777;
+}
+#events-section h4 {
+  color: #777;
+}
+#contact-section h4 {
+  color: #777;
+}
+
+
 .details > p {
   width: 100%;
   /* padding: 5px 20px; */
@@ -327,42 +367,4 @@ footer {
   display: block;
   height: 80%;
   width: 100%;
-}
-
-.team-member {
-  display: inline-block;
-  padding: 10px 20px;
-}
-.team-member h5,
-p {
-  padding: 0;
-  margin: 0;
-}
-
-.team-members {
-  margin-top: 15px;
-}
-.team-members h4 {
-  margin: 0;
-}
-
-.team-member a {
-  text-decoration: none;
-  color: black;
-}
-.team-member a:hover {
-  color: #0099cc;
-}
-.team-members h5,
-h4 {
-  font-family: "Montserrat", sans-serif;
-}
-.team-members p {
-  color: #777;
-}
-#events-section h4 {
-  color: #777;
-}
-#contact-section h4 {
-  color: #777;
 }
