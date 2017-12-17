@@ -206,65 +206,6 @@ section:nth-child(even) {
   padding-bottom: 5vh;
 } */
 
-@media (max-width: 850px) {
-  .event {
-    width: 45%;
-    height: 30vw;
-  }
-}
-
-@media (max-width: 550px) {
-  .event {
-    width: 100%;
-    height: 75vw;
-  }
-  .contact-area {
-    width: 100%;
-  }
-}
-
-@media (max-width: 414px) {
-  .logo h1 {
-    font-size: 45px;
-  }
-  .events {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .event {
-    width: 100%;
-    height: 75vw;
-    margin: 10px auto;
-    /* background-color: blueviolet; */
-  }
-  .contact-area {
-    width: 100%;
-  }
-}
-
-@keyframes modal-popup {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes modal-popdown {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-
 .modalPopup {
   animation: modal-popup 0.2s ease-in forwards;
 }
@@ -316,6 +257,9 @@ footer {
   text-align: center;
   background: #ffffff;
   border-bottom: 2px solid #eaeaea;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .team-member {
@@ -362,6 +306,7 @@ footer {
 #contact-section h4 {
   color: #777;
 }
+
 #contact-section {
   padding-bottom: 10px;
 }
@@ -526,4 +471,72 @@ footer {
   font-size: 2.2rem;
   letter-spacing: 0.3px;
   color: #777;
+}
+
+
+/*Media Query should at button*/
+@media (max-width: 850px) {
+  .event {
+    width: 45%;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .event {
+    width: 100%;
+    height: 75vw;
+  }
+  .contact-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .logo h1 {
+    font-size: 45px;
+  }
+  .events {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .event {
+    width: 100%;
+    height: 75vw;
+    margin: 10px auto;
+    /* background-color: blueviolet; */
+  }
+  .contact-area {
+    width: 100%;
+  }
+  .details>h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  .event-details>i {
+    top: -20px;
+  }
+}
+
+@keyframes modal-popup {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-popdown {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
 }
