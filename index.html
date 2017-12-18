@@ -319,22 +319,22 @@
                         </h5>
                         <form class="feedback" method="POST" action="https://formspree.io/prithweedas123@gmail.com">
                             <div class="form-group">
-                                <input name="name" type="text" class="form-control" required placeholder="Your Name *">
+                                <input id="name" name="name" type="text" class="form-control" required placeholder="Your Name *">
                             </div>
                             <div class="form-group">
-                                <input name="email" type="email" class="form-control" required placeholder="Your Email *">
+                                <input id="email" name="email" type="email" class="form-control" required placeholder="Your Email *">
                             </div>
                             <div class="form-group">
-                                <input type="hidden" name="_next" value="https://ritwickdey.github.io/bgi-tech-fech-2k18/"
+                                <input id="_next" type="hidden" name="_next" value="https://ritwickdey.github.io/bgi-tech-fech-2k18/"
                                 />
                             </div>
                             <div class="form-group">
-                                <input name="phone" type="text" class="form-control" placeholder="Your Phone No *"
+                                <input id="phone" name="phone" type="text" class="form-control" placeholder="Your Phone No *"
                                     required>
                             </div>
                             <div class="form-group">
-                                <textarea name="message" style="height: 182px" type="text" class="form-control" placeholder="Your Message *"
-                                    required></textarea>
+                                <textarea id="message" name="message" style="height: 182px" type="text" class="form-control"
+                                    placeholder="Your Message *" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button class="btn from-submit" type="submit">SEND MESSAGE</button>
@@ -397,19 +397,32 @@
         });
         wow.init();
 
-        // let feedbackForm = document.querySelector('.feedback');
-        // let json;
-        // feedbackForm.addEventListener('submit', (e) => {
-        //     e.preventDefault();
-        //     fetch("", {
-        //         method: 'GET', body: {
-        //             name: 'Prithwee Das'
-        //         }
-        //     })
-        //         .then(response => response.json())
-        //         .then(data => data === "OK" ? console.log("DONE") : console.log("not done"))
-        //         .catch(e => console.log("hgj"));
-        // });
+        let feedbackForm = document.querySelector('.feedback');
+        feedbackForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let name = document.querySelector('#name');
+            let email = document.querySelector('#email');
+            let phone = document.querySelector('#phone');
+            let message = document.querySelector('#message');
+            $.ajax({
+                url: "https://formspree.io/prithweedas123@gmail.com",
+                method: "POST",
+                data: {
+                    name: name.value,
+                    email: email.value,
+                    phone: phone.value,
+                    message: message.value
+                },
+                dataType: "json",
+                success: () => {
+                    alert("MESSAGE SENT!")
+                    name.value = "";
+                    email.value = "";
+                    phone.value = "";
+                    message.value = "";
+                }
+            });
+        });
 
     </script>
 
