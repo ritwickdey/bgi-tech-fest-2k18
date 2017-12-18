@@ -193,12 +193,23 @@ section:nth-child(even) {
   background-color: #3498db;
   color: #fff;
   transition: all 0.2s;
+  border-radius: 4px;
+  box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
 }
 
-.btn:focus,
 .btn:hover {
   color: #fff;
+  transform: translateY(-4px);
   background-color: #F20056;
+  box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.35);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  color: #fff;
+  background-color: #F20056;
+  box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.35);
 }
 
 .btn:disabled {
@@ -506,7 +517,7 @@ footer {
   flex-flow: wrap;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 6%;
   margin-left: 10%;
 }
 
@@ -537,15 +548,20 @@ footer {
   margin-bottom: 20px;
 }
 
+.details-card .details-item.details-btns .btn {
+  padding: 3px 25px;
+  color: #fff;
+}
+
 .details-card h5 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
   margin-bottom: 8px;
   font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .details-card li {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   padding: 0px 0;
   list-style: none;
