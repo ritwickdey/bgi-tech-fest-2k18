@@ -553,6 +553,11 @@ footer {
   margin-bottom: 20px;
 }
 
+.details-card .details-item.details-btns .details-btn  {
+  margin: 0 2.5px;
+  margin-bottom: 3px;
+}
+
 .details-card .details-item.details-btns .btn {
   padding: 3px 25px;
   color: #fff;
@@ -566,8 +571,10 @@ footer {
 }
 
 .prizeMoney {
+  text-align: center;
   display: block;
   margin: 8px 0px;
+  margin-left: -16%;
 }
 
 .prizeMoney h5,
@@ -597,6 +604,17 @@ footer {
 
 .bold {
   font-weight: bold;
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+.small-font {
+  font-size: 13px;
 }
 
 
