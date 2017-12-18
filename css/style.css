@@ -191,17 +191,20 @@ section:nth-child(even) {
   height: 100%;
   font-size: 15px;
   background-color: #3498db;
+  border-color: #3498db;
   color: #fff;
   transition: all 0.2s;
   border-radius: 4px;
   box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.26);
   cursor: pointer;
+  font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn:hover {
   color: #fff;
   transform: translateY(-4px);
   background-color: #F20056;
+  border-color: #F20056;
   box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.35);
 }
 
@@ -209,6 +212,7 @@ section:nth-child(even) {
   transform: translateY(-1px);
   color: #fff;
   background-color: #F20056;
+  border-color: #F20056;
   box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.35);
 }
 
@@ -519,6 +523,7 @@ footer {
   justify-content: center;
   margin-top: 6%;
   margin-left: 10%;
+  font-size: 1.6rem;
 }
 
 .details-card .details-item {
@@ -560,16 +565,38 @@ footer {
   font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.details-card li {
+.prizeMoney {
+  display: block;
+  margin: 8px 0px;
+}
+
+.prizeMoney h5,
+.prizeMoney p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* .details-card li {
   font-size: 16px;
   margin: 0;
   padding: 0px 0;
   list-style: none;
+} */
+
+.details-card td {
+  margin: 0;
+  padding: 8px 5px;
 }
 
 .msg-sent-confirm {
   margin-bottom: 15px;
   display: none;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 
