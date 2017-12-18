@@ -198,6 +198,7 @@ section:nth-child(even) {
   box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.26);
   cursor: pointer;
   font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 150px;
 }
 
 .btn:hover {
