@@ -551,6 +551,11 @@ footer {
   list-style: none;
 }
 
+.msg-sent-confirm {
+  margin-bottom: 15px;
+  display: none;
+}
+
 
 /*Media Query should at button*/
 

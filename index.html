@@ -56,7 +56,7 @@
                         </ul>
                     </div>
                     <div class="details-item details-btns">
-                       <buttonc class="btn">Register</button>
+                        <buttonc class="btn">Register</button>
                     </div>
                 </div>
             </div>
@@ -248,9 +248,8 @@
         <div class="container">
             <h1 class="headline-section">About</h1>
             <h4 class="subline-section">The Technitiate</h4>
-            <hr> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eveniet
-            autem, id a, fugit sunt optio aliquam voluptas, explicabo enim consequuntur
-            hic amet voluptates provident necessitatibus dolorem quam impedit. Quo?
+            <hr> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eveniet autem, id a, fugit sunt optio aliquam
+            voluptas, explicabo enim consequuntur hic amet voluptates provident necessitatibus dolorem quam impedit. Quo?
         </div>
     </section>
     <section class="wow slideInLeft" id="team-section">
@@ -350,18 +349,17 @@
                                 <input id="email" name="email" type="email" class="form-control" required placeholder="Your Email *">
                             </div>
                             <div class="form-group">
-                                <input id="_next" type="hidden" name="_next" value="https://ritwickdey.github.io/bgi-tech-fech-2k18/"
-                                />
+                                <input id="_next" type="hidden" name="_next" value="https://ritwickdey.github.io/bgi-tech-fech-2k18/" />
                             </div>
                             <div class="form-group">
-                                <input id="phone" name="phone" type="text" class="form-control" placeholder="Your Phone No *"
-                                    required>
+                                <input id="phone" name="phone" type="text" class="form-control" placeholder="Your Phone No *" required>
                             </div>
                             <div class="form-group">
-                                <textarea id="message" name="message" style="height: 182px" type="text" class="form-control"
-                                    placeholder="Your Message *" required></textarea>
+                                <textarea id="message" name="message" style="height: 182px" type="text" class="form-control" placeholder="Your Message *"
+                                    required></textarea>
                             </div>
                             <div class="form-group">
+                                <div id="msgSentConfirm"></div>
                                 <button id="formSubmit" class="btn from-submit" type="submit">SEND MESSAGE</button>
                             </div>
                         </form>
@@ -422,6 +420,31 @@
         });
         wow.init();
 
+        const showConfirmMsg = IsSent => {
+            const successHtml =
+                `
+                    <div class="msg-sent-confirm" style="color:green;">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        Message Sent!
+                    </div>
+                `;
+
+            const failedHtml =
+                `
+                    <div class="msg-sent-confirm" style="color:red;">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        Opps! Somthing Went Wrong!
+                    </div>
+                `;
+            const targetHtml = IsSent ? successHtml : failedHtml;
+
+            $('#msgSentConfirm').html('');
+            $('#msgSentConfirm').html(targetHtml);
+            $('.msg-sent-confirm').fadeIn();
+            $('.msg-sent-confirm').delay(2000).fadeOut();
+
+        }
+
         let feedbackForm = document.querySelector('.feedback');
         feedbackForm.addEventListener('submit', e => {
             e.preventDefault();
@@ -431,6 +454,7 @@
             let message = document.querySelector('#message');
             let submitBtn = document.getElementById('formSubmit');
             submitBtn.disabled = true
+            submitBtn.innerHTML = "Sending...";
             $.ajax({
                 url: "https://formspree.io/prithweedas123@gmail.com",
                 method: "POST",
@@ -442,20 +466,21 @@
                 },
                 dataType: "json",
                 success: () => {
-                    alert("MESSAGE SENT!");
+                    showConfirmMsg(true);
                     name.value = "";
                     email.value = "";
                     phone.value = "";
                     message.value = "";
                     submitBtn.disabled = false;
+                    submitBtn.innerHTML = "Send Message";
                 },
                 error: () => {
-                    alert("Somthing Went Wrong!");
+                    showConfirmMsg(false);
                     submitBtn.disabled = false;
+                    submitBtn.innerHTML = "Send Message";
                 }
             });
         });
-
     </script>
 
 </body>
