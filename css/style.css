@@ -620,6 +620,13 @@ footer {
 
 /*Media Query should at button*/
 
+@media (max-width: 1295px) {
+  .details-card {
+    margin-top: 10%;
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 850px) {
   .event {
     width: 45%;
