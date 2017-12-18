@@ -546,7 +546,7 @@ footer {
 }
 
 .details-card .details-item.details-btns {
-  width: 100%;
+  width: 65%;
   text-align: center;
   margin-left: -11%;
   margin-top: -10px;
@@ -673,6 +673,9 @@ footer {
     font-size: 3.5rem;
   }
   .form-group {
+    width: 100%;
+  }
+  .btn {
     width: 100%;
   }
 }
