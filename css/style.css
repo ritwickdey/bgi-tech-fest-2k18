@@ -283,23 +283,24 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
-.team-member {
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-.team-member h5,
-.team-member p {
-  padding: 0;
-  margin: 0;
-}
 
 .team-members {
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 65px;
 }
 
-.team-members h4 {
-  margin: 0;
+.team-members:last-child {
+  margin-bottom: 0px;
+}
+
+.team-member {
+  min-width: 15%;
+  margin: 8px 5px;
 }
 
 .team-member a {
@@ -307,16 +308,32 @@ footer {
   color: black;
 }
 
-.team-member a:hover {
-  color: #0099cc;
+.team-members>h4 {
+  display: block;
+  width: 100%;
+  word-spacing: 3px;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
-.team-members h5,
-.team-members h4 {
-  font-family: "Montserrat", sans-serif;
+.team-members>p {
+  width: 100%;
 }
 
-.team-members p {
+.team-member>h5,
+.team-member>a>h5 {
+  padding: 0;
+  margin: 0;
+  color: #2c2c2c;
+}
+
+.team-member>p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
   color: #777;
 }
 
@@ -554,7 +571,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.details-card .details-item.details-btns .details-btn  {
+.details-card .details-item.details-btns .details-btn {
   margin: 0 2.5px;
   margin-bottom: 3px;
 }
@@ -610,6 +627,7 @@ footer {
 .green {
   color: green;
 }
+
 .red {
   color: red;
 }
