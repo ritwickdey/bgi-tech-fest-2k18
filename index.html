@@ -415,11 +415,14 @@
                 },
                 dataType: "json",
                 success: () => {
-                    alert("MESSAGE SENT!")
+                    alert("MESSAGE SENT!");
                     name.value = "";
                     email.value = "";
                     phone.value = "";
                     message.value = "";
+                },
+                error: () => {
+                    alert("OOPS! Something went Wrong");
                 }
             });
         });
