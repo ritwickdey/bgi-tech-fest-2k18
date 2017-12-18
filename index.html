@@ -342,7 +342,7 @@
                         <h5>
                             Send Query
                         </h5>
-                        <form class="feedback" method="POST" action="https://formspree.io/prithweedas123@gmail.com">
+                        <form class="feedback">
                             <div class="form-group">
                                 <input id="name" name="name" type="text" class="form-control" required placeholder="Your Name *">
                             </div>
@@ -362,7 +362,7 @@
                                     placeholder="Your Message *" required></textarea>
                             </div>
                             <div class="form-group">
-                                <button class="btn from-submit" type="submit">SEND MESSAGE</button>
+                                <button id="formSubmit" class="btn from-submit" type="submit">SEND MESSAGE</button>
                             </div>
                         </form>
                     </div>
@@ -423,12 +423,14 @@
         wow.init();
 
         let feedbackForm = document.querySelector('.feedback');
-        feedbackForm.addEventListener('submit', (e) => {
+        feedbackForm.addEventListener('submit', e => {
             e.preventDefault();
             let name = document.querySelector('#name');
             let email = document.querySelector('#email');
             let phone = document.querySelector('#phone');
             let message = document.querySelector('#message');
+            let submitBtn = document.getElementById('formSubmit');
+            submitBtn.disabled = true
             $.ajax({
                 url: "https://formspree.io/prithweedas123@gmail.com",
                 method: "POST",
@@ -445,6 +447,11 @@
                     email.value = "";
                     phone.value = "";
                     message.value = "";
+                    submitBtn.disabled = false;
+                },
+                error: () => {
+                    alert("Somthing Went Wrong!");
+                    submitBtn.disabled = false;
                 }
             });
         });
