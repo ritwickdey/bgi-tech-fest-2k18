@@ -655,12 +655,16 @@ footer {
     height: 30vw;
   }
   .details-card .details-item {
-    width: 65%;
+    width: 85%;
     margin: 8px 0;
+  }
+  .details-card .details-item.details-rules,
+  .details-card .details-item.details-btns {
+    width: 85%;
+    margin-left: 0;
   }
   .details-card {
     margin-top: 18%;
-    margin-left: auto;
   }
 }
 
@@ -670,6 +674,10 @@ footer {
     height: 75vw;
   }
   .contact-area {
+    width: 100%;
+  }
+  .form-group,
+  .form-control {
     width: 100%;
   }
 }
@@ -700,9 +708,6 @@ footer {
     right: 0%;
     left: auto;
     font-size: 3.5rem;
-  }
-  .form-group {
-    width: 100%;
   }
   .btn {
     width: 100%;
