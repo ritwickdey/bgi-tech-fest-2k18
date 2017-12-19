@@ -418,15 +418,15 @@ footer {
 
 .card .card-front .headText p {
   font-size: 20px;
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  word-spacing: 1.5px;
   position: absolute;
   width: 100%;
   top: 50%;
   left: 50%;
   color: #ffffff;
   transform: translate(-50%, -50%);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .card .card-front .headText {
@@ -484,8 +484,8 @@ footer {
 .card .card-back .headText p,
 .card .card-back .eventName p {
   font-size: 20px;
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  word-spacing: 1.5px;
   position: absolute;
   width: 100%;
   top: 50%;
@@ -498,7 +498,8 @@ footer {
 .card .card-back .eventName p {
   font-size: 25px;
   letter-spacing: 0.5px;
-  word-spacing: 0.5px;
+  word-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .headline-section {
