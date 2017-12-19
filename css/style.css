@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   /* font-family: 'Lato', sans-serif; */
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 body {
@@ -282,7 +286,6 @@ footer {
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
 }
-
 
 .team-members {
   display: flex;
