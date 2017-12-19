@@ -152,6 +152,7 @@ section:nth-child(even) {
   height: 14vw;
   width: 32%;
   margin: 10px auto;
+  z-index: 75;
   /* background-color: blueviolet; */
 }
 
@@ -381,6 +382,8 @@ footer {
   border-radius: 2px;
   z-index: 5;
   perspective: 1500px;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
 }
 
 .card .card-item {
@@ -389,6 +392,7 @@ footer {
   height: 100%;
   width: 100%;
   box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.361);
+  pointer-events: none; /* Firefox issue - TOOK MY 2hrs >:( */
 }
 
 .card .card-front {
@@ -396,11 +400,15 @@ footer {
   backface-visibility: hidden;
   transition: all 0.8s ease-in-out;
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
 }
 
 .card:hover .card-front {
   background-color: #eee;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
 .card .card-front img {
@@ -438,12 +446,16 @@ footer {
 .card .card-back {
   backface-visibility: hidden;
   transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
   transition: all 0.8s ease-in-out;
 }
 
 .card:hover .card-back {
   background-color: #eee;
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
 }
 
 .card .card-back img {
