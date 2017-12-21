@@ -116,7 +116,7 @@
 
                     </div>
                     <div class="details-item details-btns">
-                        <button class="btn details-btn">Rules</button>
+                        <button class="btn details-btn" id="codeStromBtn">Rules</button>
                         <button class="btn details-btn RegisterBtn">Register</button>
                         <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
                         <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
@@ -301,7 +301,7 @@
     <section class="wow slideInLeft" id="team-section">
         <div class="container">
             <h1 class="headline-section">OUR AMAZING TEAM</h1>
-            <h4 class="subline-section">Teacher & Co-ordinators</h4>
+            <!-- <h4 class="subline-section">Teacher & Co-ordinators</h4> -->
             <hr>
             <div class="team-members">
                 <h4>TEACHERS & co-ordinator</h4>
@@ -366,7 +366,7 @@
                     <p>Code-storm</p>
                 </div>
             </div> -->
-            
+
     </section>
 
     <section class="wow slideInRight" id="contact-section">
@@ -458,10 +458,13 @@
             scrollContainer: null // optional scroll container selector, otherwise use window
         });
         wow.init();
-        const url = "https://goo.gl/forms/h7NmKvRsETvQdhDV2";
-        [...document.getElementsByClassName('RegisterBtn')].forEach(e => {
-            e.onclick = () => window.open(url, '_blank');
-        });
+        const registerUrl = 'https://goo.gl/forms/h7NmKvRsETvQdhDV2';
+        const codeStromUrl = 'https://drive.google.com/open?id=1T6hdXMUWOAnq43GYyxEaQkmUOuuQ7Tjo';
+
+        document.getElementById('codeStromBtn').onclick = () => window.open(codeStromUrl, '_blank');
+
+        [...document.getElementsByClassName('RegisterBtn')].forEach(e =>
+            e.onclick = () => window.open(registerUrl, '_blank'));
     </script>
 
 </body>
