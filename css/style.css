@@ -722,6 +722,26 @@ footer {
     margin-left: auto;
   }
 }
+@media (max-width: 990px) {
+  .about-box,
+  .about-box:nth-child(odd) {
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+  } 
+  .about-blank{
+    width: 0%;
+  }
+  .about-img, .about-content {
+    width: 100%;
+  }
+  .about-img {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
+
 
 @media (max-width: 850px) {
   .event {
