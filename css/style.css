@@ -393,7 +393,8 @@ footer {
   height: 100%;
   width: 100%;
   box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.361);
-  pointer-events: none; /* Firefox issue - TOOK MY 2hrs >:( */
+  pointer-events: none;
+  /* Firefox issue - TOOK MY 2hrs >:( */
 }
 
 .card .card-front {
@@ -651,6 +652,65 @@ footer {
 
 .small-font {
   font-size: 13px;
+}
+
+.about-box {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.about-img {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.about-img>img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #f20056;
+  border-radius: 50%;
+  flex-direction: row;
+}
+
+.about-box:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.about-content {
+  width: 60%;
+  position: relative;
+}
+
+/* .about-content::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  margin: 5px 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  display: block;
+} */
+
+.about-content h5 {
+  margin: 0;
+  font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.0rem;
+  padding: 0;
+}
+
+.about-content p {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.about-blank {
+  height: 100%;
+  width: 15%;
 }
 
 
