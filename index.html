@@ -165,14 +165,14 @@
         </div>
     </section>
 
-    <section class="wow slideInLeft" id="events-section">
+    <section class="" id="events-section">
         <div class="container">
             <div>
                 <h2 class="headline-section">EVENTS</h2>
                 <h4 class="subline-section">Some exciting events that are taking place</h4>
                 <hr>
                 <div class="events">
-                    <div eventNo="1" class="event wow zoomIn">
+                    <div eventNo="1" class="event wow slideInLeft">
                         <div class="card">
                             <div class="card-item card-front">
                                 <img src="./img/events/techno_buzz_comp.jpg" alt="techno-buzz">
@@ -210,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div eventNo="3" class="event Right">
+                    <div eventNo="3" class="event Right wow slideInRight">
                         <div class="card">
                             <div class="card-item card-front">
                                 <img src="./img/events/code-storm.jpg" alt="code-storm">
@@ -229,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div eventNo="4" class="event wow jackInTheBox">
+                    <div eventNo="4" class="event wow slideInLeft">
                         <div class="card">
                             <div class="card-item card-front">
                                 <img src="./img/events/photography.jpg" alt="photography">
@@ -248,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div eventNo="5" class="event wow rollIn">
+                    <div eventNo="5" class="event wow jackInTheBox">
                         <div class="card">
                             <div class="card-item card-front">
                                 <img src="./img/events/cs-go.jpg" alt="cs-go">
@@ -267,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div eventNo="6" class="event wow zoomIn">
+                    <div eventNo="6" class="event wow slideInRight">
                         <div class="card">
                             <div class="card-item card-front">
                                 <img src="./img/events/fifa-15.jpeg" alt="fifa-15">
@@ -295,7 +295,7 @@
             <h1 class="headline-section">About</h1>
             <h4 class="subline-section">The Technitiate</h4>
             <hr>
-            <div class="about-box">
+            <div class="wow slideInRight about-box">
                 <div class="about-img">
                     <img src="./img/about/1.jpg" alt="about">
                 </div>
@@ -310,7 +310,7 @@
                 </div>
                 <div class="about-blank"></div>
             </div>
-            <div class="about-box">
+            <div class="wow slideInLeft about-box">
                 <div class="about-img">
                     <img src="./img/about/2.jpg" alt="about">
                 </div>
@@ -323,7 +323,7 @@
                 </div>
                 <div class="about-blank"></div>
             </div>
-            <div class="about-box">
+            <div class="wow slideInRight about-box">
                 <div class="about-img">
                     <img src="./img/about/3.jpg" alt="about">
                 </div>
@@ -336,7 +336,7 @@
                 </div>
                 <div class="about-blank"></div>
             </div>
-            <div class="about-box">
+            <div class="wow slideInLeft about-box">
                 <div class="about-img">
                     <img src="./img/about/4.jpg" alt="about">
                 </div>
@@ -354,12 +354,12 @@
             </div>
         </div>
     </section>
-    <section class="wow slideInLeft" id="team-section">
+    <section class="" id="team-section">
         <div class="container">
             <h1 class="headline-section">OUR AMAZING TEAM</h1>
             <!-- <h4 class="subline-section">Teacher & Co-ordinators</h4> -->
             <hr>
-            <div class="team-members">
+            <div class="wow slideInRight team-members">
                 <h4>TEACHERS & co-ordinator</h4>
                 <div class="team-member">
                     <h5>Prof. Shyamal Goswami</h5>
@@ -374,7 +374,7 @@
                     <p>Teacher Co-ordinator</p>
                 </div>
             </div>
-            <div class="team-members">
+            <div class="wow slideInLeft team-members">
                 <h4>EVENT MANAGEMENT</h4>
                 <!-- <p>THE PEOPLE WHO MANAGED RELATIONS WITH SPONSERS</p> -->
                 <div class="team-member">
@@ -390,7 +390,7 @@
                     <p>Assistant Marketer</p>
                 </div>
             </div>
-            <div class="team-members">
+            <div class="wow slideInRight team-members">
                 <h4>WEB DEVELOPMENT</h4>
                 <!-- <p>THE PEOPLE WHO DEVELOPED THIS WEBSITE AND OTHER CREATIVE STUFF</p> -->
                 <div class="team-member">
@@ -504,7 +504,7 @@
         var wow = new WOW({
             boxClass: 'wow', // animated element css class (default is wow)
             animateClass: 'animated', // animation css class (default is animated)
-            offset: 50, // distance to the element when triggering the animation (default is 0)
+            offset: 20, // distance to the element when triggering the animation (default is 0)
             mobile: true, // trigger animations on mobile devices (default is true)
             live: true, // act on asynchronously loaded content (default is true)
             callback: function (box) {
