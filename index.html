@@ -143,9 +143,8 @@
             <i class="fa fa-3x fa-times modal-close-btn" eventNo="5" aria-hidden="true"></i>
             <div class="details">
                 <h1>CS Go</h1>
-                <p>
-                    Rules will be declared soon...
-                </p>
+                 <button class="btn details-btn" id="csGoBtn">Rules</button>
+                 <button class="btn details-btn RegisterBtn">Register</button>
             </div>
         </div>
         <div class="event-details 6-event">
@@ -518,7 +517,9 @@
         wow.init();
         const registerUrl = 'https://goo.gl/forms/h7NmKvRsETvQdhDV2';
         const codeStromUrl = 'https://drive.google.com/open?id=1T6hdXMUWOAnq43GYyxEaQkmUOuuQ7Tjo';
+        const csGoUrl = 'https://drive.google.com/open?id=1W-ozeGOEu08jmqWxOjCTwKAui5KnFzDU';
 
+        document.getElementById('csGoBtn').onclick = () => window.open(csGoUrl, '_blank');
         document.getElementById('codeStromBtn').onclick = () => window.open(codeStromUrl, '_blank');
 
         [...document.getElementsByClassName('RegisterBtn')].forEach(e =>
