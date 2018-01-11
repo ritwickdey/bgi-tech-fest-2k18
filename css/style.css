@@ -574,6 +574,7 @@ footer {
 
 .details-card .details-item.details-rules {
   width: 65%;
+  margin-top: -20px;
 }
 
 .details-card .details-item.details-img img {
