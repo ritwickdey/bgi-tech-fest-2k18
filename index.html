@@ -108,6 +108,7 @@
                                 <td>3</td>
                             </tr>
                         </table>
+                        <p><i>(Download Rules for more details)</i></p>
                     </div>
                     <div class="details-item details-rules">
                         <div>
@@ -134,9 +135,54 @@
             <i class="fa fa-3x fa-times modal-close-btn" eventNo="4" aria-hidden="true"></i>
             <div class="details">
                 <h1>Photography</h1>
-                <p>
-                    Rules will be declared soon...
-                </p>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img src="./img/events/photography.jpg" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Photography</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td>Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>Rs.XX/- per head</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Topic</td>
+                                <td>:</td>
+                                <td>...</td>
+                            </tr>
+                        </table>
+                        <p><i>(Download Rules for more details)</i></p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Want a place to prove yourself as a better Frame-maker. We are giving you an opportunity to prove yourself and get rewarded
+                            for your effort.
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: INR X,XXX/-*</p>
+                            <p>2nd Prize: INR X,XXX/-*</p>
+                        </div>
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="photoBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="event-details 5-event">
@@ -171,6 +217,7 @@
                                 <td>5</td>
                             </tr>
                         </table>
+                        <p><i>(Download Rules for more details)</i></p>
                     </div>
                     <div class="details-item details-rules">
                         <div>
@@ -195,10 +242,52 @@
         <div class="event-details 6-event">
             <i class="fa fa-3x fa-times modal-close-btn" eventNo="6" aria-hidden="true"></i>
             <div class="details">
-                <h1>Fifa 15</h1>
-                <p>
-                    Rules will be declared soon...
-                </p>
+                <h1>FIFA 15</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img style="height:90%" src="./img/events/fifa-15.jpeg" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Gaming</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td>Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>Rs.75/- per head</td>
+                            </tr>
+
+                        </table>
+                        <p><i>(Download Rules for more details)</i></p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Feel the game.
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: INR 1,200/-*</p>
+                            <p>2nd Prize: INR 800/-*</p>
+                        </div>
+
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="fifaBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -563,9 +652,13 @@
         const registerUrl = 'https://goo.gl/forms/h7NmKvRsETvQdhDV2';
         const codeStromUrl = 'https://drive.google.com/open?id=1T6hdXMUWOAnq43GYyxEaQkmUOuuQ7Tjo';
         const csGoUrl = 'https://drive.google.com/open?id=1W-ozeGOEu08jmqWxOjCTwKAui5KnFzDU';
+        const fifaUrl = 'https://drive.google.com/open?id=1vAflCxE2pYFOG6hemUqN8QjE98zax9to';
+        const photoUrl = 'https://drive.google.com/open?id=1vAflCxE2pYFOG6hemUqN8QjE98zax9to';
 
         document.getElementById('csGoBtn').onclick = () => window.open(csGoUrl, '_blank');
         document.getElementById('codeStromBtn').onclick = () => window.open(codeStromUrl, '_blank');
+        document.getElementById('fifaBtn').onclick = () => window.open(fifaUrl, '_blank');
+        document.getElementById('photoBtn').onclick = () => window.open(photoUrl, '_blank');
 
         [...document.getElementsByClassName('RegisterBtn')].forEach(e =>
             e.onclick = () => window.open(registerUrl, '_blank'));
