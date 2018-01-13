@@ -90,7 +90,7 @@ section:nth-child(even) {
 .landing {
   height: 100%;
   width: 100%;
-  background-image: url(https://c2.staticflickr.com/6/5496/29392487963_de266ba9a5_b.jpg);
+  background-image: url(/img/header.jpg);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -574,7 +574,7 @@ footer {
 
 .details-card .details-item.details-rules {
   width: 65%;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .details-card .details-item.details-img img {
@@ -590,6 +590,11 @@ footer {
   margin-bottom: 20px;
 }
 
+.details-card .details-item.details-category > p :last-child {
+  display: block;
+  font-size: 12px;
+  margin-top: -20px;
+}
 .details-card .details-item.details-btns .details-btn {
   margin: 0 2.5px;
   margin-bottom: 3px;
@@ -752,6 +757,10 @@ footer {
   .details-card .details-item {
     width: 85%;
     margin: 8px 0;
+    text-align: center;
+  }
+  .details-card table {
+    display: inline-block;
   }
   .details-card .details-item.details-rules,
   .details-card .details-item.details-btns {
