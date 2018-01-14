@@ -90,7 +90,7 @@ section:nth-child(even) {
 .landing {
   height: 100%;
   width: 100%;
-  background-image: url(/img/header1.jpg);
+  background-image: url(../img/header1.jpg);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
